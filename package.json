@@ -1,0 +1,23 @@
+{
+  "name": "n",
+  "version": "1.0.0",
+  "description": "hej",
+  "main": "test.js",
+  "dependencies": {
+    "bootstrap": "^4.5.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "sass": "sass --watch CSS/mystyle.scss CSS/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RasmusPettersson01/webbutiker.git"
+  },
+  "author": "Rasmus Pettersson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RasmusPettersson01/webbutiker/issues"
+  },
+  "homepage": "https://github.com/RasmusPettersson01/webbutiker#readme"
+}

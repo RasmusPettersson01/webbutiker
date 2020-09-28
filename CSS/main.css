@@ -1,0 +1,21 @@
+body {
+  background-color: #040926;
+}
+
+p {
+  color: #93B7BE;
+  font-size: 20px;
+  font-style: italic;
+}
+
+h1 {
+  color: #EDD382;
+  font-size: 35px;
+  font-decoration: underline;
+}
+
+h2 {
+  color: #F8F1FF;
+}
+
+/*# sourceMappingURL=main.css.map */
