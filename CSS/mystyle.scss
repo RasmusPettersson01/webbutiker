@@ -371,12 +371,6 @@ h2 {
 
 /* bootstrap.css | file:///home/rasmusp/Desktop/Projekt%20%C3%A5r%204/node_modules/bootstrap/dist/css/bootstrap.css */
 
-@media (min-width: 768px) {
-  .container, .container-sm, .container-md {
-    /* max-width: 720px; */
-    max-width: 100%;
-  }
-}
 
 /* main.css | file:///home/rasmusp/Desktop/Projekt%20%C3%A5r%204/CSS/main.css */
 
@@ -486,12 +480,6 @@ h2 {
 
 /* bootstrap.css | file:///home/rasmusp/Desktop/Projekt%20%C3%A5r%204/node_modules/bootstrap/dist/css/bootstrap.css */
 
-@media (min-width: 576px) {
-  .col-sm-3 {
-    margin-top: 3vh;
-  }
-}
-
 /* bootstrap.css | file:///home/rasmusp/Desktop/Projekt%20%C3%A5r%204/node_modules/bootstrap/dist/css/bootstrap.css */
 
 a {
@@ -507,19 +495,24 @@ a {
   padding-bottom: 1vh;
 }
 
-@media (min-width: 576px) {
-  .col-sm-3 {
-    /* margin-top: 3vh; */
-    margin-top: 2vh;
-  }
-}
-
 div.row:nth-child(4) > div:nth-child(1) {
   padding-bottom: 2vh;
 }
 
+@media (max-width: 500px){
+  .col-sm-3 {
+    /* margin-top: 3vh; */
+    margin-top: 2vh;
+  }
+  .container, .container-sm, .container-md {
+    /* max-width: 720px; */
+    max-width: 100%;
+  }
 
-@media (max-width: 800px) and (min-width: 700px){
+* {
+        background-color: green !important;
+}
+
 
   /* main.css | file:///home/rasmusp/Desktop/Projekt%20%C3%A5r%204/CSS/main.css */
 
@@ -537,5 +530,14 @@ div.row:nth-child(4) > div:nth-child(1) {
     /* margin-top: -4vh; */
     margin-top: -4.5vh;
   }
+}
 
+@media(max-width:2000px) {
+  .navbar .navbar-brand {float:none;display: inline-block;}
+  .navbar .navbar-nav>.nav-item { float: none; margin-left: .1rem;}
+  .navbar .navbar-nav {float:none !important;}
+  .nav-item{width:100%;text-align:left;}
+  .navbar-toggler {display: block !important;}
+  .navbar-toggleable-sm.collapse {display:none !important}
+  .navbar-toggleable-sm.collapse.in {display:block !important}
 }
