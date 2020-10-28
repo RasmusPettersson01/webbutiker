@@ -4,12 +4,12 @@
     "display": "browser",
     "scope": "/",
     "start_url": "/index.html",
-    "name": "WebbutikerUF",
+    "app_name": "WebbutikerUF",
     "short_name": "WebUF",
     "icons": [
         {
             "src": "webbutikerlogotyp.png",
-            "sizes": "794x1123",
+            "sizes": "512x512",
             "type": "image/png"
         }
     ]
