@@ -94,6 +94,8 @@ self.addEventListener("fetch", (event) => {
     // Update UI notify the user they can install the PWA
     showInstallPromotion();
 
+
+
     buttonInstall.addEventListener('click', (e) => {
       // Hide the app provided install promotion
       hideMyInstallPromotion();
