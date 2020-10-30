@@ -16,14 +16,12 @@ Copyright 2015, 2019, 2020 Google LLC. All Rights Reserved.
 const OFFLINE_VERSION = 1;
 const CACHE_NAME = "offline";
 // Customize this with a different URL if needed.
-const OFFLINE_URL = "index.html";
+const OFFLINE_URL = "offline.html";
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
     (async () => {
       const cache = await caches.open(CACHE_NAME);
-      console.log("1");
-
       // Setting {cache: 'reload'} in the new request will ensure that the
       // response isn't fulfilled from the HTTP cache; i.e., it will be from
       // the network.
@@ -61,8 +59,6 @@ self.addEventListener("fetch", (event) => {
           if (preloadResponse) {
             return preloadResponse;
           }
-          console.log("2");
-
 
           // Always try the network first.
           const networkResponse = await fetch(event.request);
@@ -81,4 +77,10 @@ self.addEventListener("fetch", (event) => {
       })()
     );
   }
-  console.log("4");
+
+  // If our if() condition is false, then this fetch handler won't intercept the
+  // request. If there are any other fetch handlers registered, they will get a
+  // chance to call event.respondWith(). If no fetch handlers call
+  // event.respondWith(), the request will be handled by the browser as if there
+  // were no service worker involvement.
+});
