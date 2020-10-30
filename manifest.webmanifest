@@ -11,6 +11,11 @@
             "src": "webbutikerlogotyp.png",
             "sizes": "512x512",
             "type": "image/png"
-        }
+        },
+        {
+      "src": "webbutik192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
     ]
 }
